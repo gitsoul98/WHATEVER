@@ -6,3 +6,57 @@ ok now I understand how it works ..
 
 
 
+
+Hello there I'll upload 5 basic thing's about React
+
+1.Feature of React 
+   -JSX (JavaScript XML)
+   -Components
+   -Virtual DOM
+   -One Way Data-binding
+   -High Performance
+2.What is JSX ?
+  -- JSX is a syntax extention of JavaScript
+  -- It is used with React to describe what the user interface ssshould look like 
+3. Can web Browser read JSX Directly ?
+  --No bcz they are bulit to read only "regular JS" but JSX are not regular JavaScript Object 
+  -- By Babel we can read this 
+4.What is Virtual DOM ?
+  -- DOM -> Document Object Model 
+     - DOM represents an HTML document with with a "logical tree Structure"
+     - "Each branch" of tree ends in a "node"--> Contain "OBJECT" 
+     
+     -   Light weight representation of RealDom --> Virtual Dom 
+      - State Of the Object Change  ==>> VD Change the Object Instead oF updating all the object .
+5. What is EVENT ?
+   - An Event is an action (USER || SYSTEM may trigger)==> "Pressing Key " , "Mouse Click"
+   - Naming Using camelCase 
+    -- With JSX - Pass a funtion as Event Handler instead as a String in HTML .
+ ++++++++++EVENT++++++++
+ --> 
+
+
+""""
+import React from 'react';
+
+class Simple extends React.Component {
+  work() {
+    alert("Good Work!");
+  }
+
+  render() {
+    return (
+      <button onClick={() => this.work()}>Do some work!</button>
+    );
+  }
+}
+
+export default Simple;
+"""
+
+
+
+
+
+
+
