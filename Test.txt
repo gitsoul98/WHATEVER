@@ -54,6 +54,12 @@ class Simple extends React.Component {
 export default Simple;
 """
 
+6. What is useState() in react ?
+
+   - Built in React Hook 
+          - Allows u having state variables in Functional Component 
+          - 
+
 
 
 
