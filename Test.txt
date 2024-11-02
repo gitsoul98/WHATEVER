@@ -58,7 +58,9 @@ export default Simple;
 
    - Built in React Hook 
           - Allows u having state variables in Functional Component 
-          - 
+          -  a React Hook that lets you add a state variable to your component
+
+       const [state, setState] = useState(initialState)
 
 
 
