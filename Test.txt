@@ -63,6 +63,40 @@ export default Simple;
        const [state, setState] = useState(initialState)
 
 
+7. synthetic events in React?
+
+   - Synthetic events combine the response of different browsers native events into one API  
+   - ensuring that the events are consistent across different browsers.
+      The application is consistent regardless of the browser it is running in. Here, preventDefault is a synthetic event.
+
+   function ActionLink() { 
+      function handleClick(e) {
+         e.preventDefault(); 
+         console.log('You just clicked a Link.');
+         } 
+         return (
+            <a href="#" onClick={handleClick}> Click_Me </a> 
+                );
+
+8. how lists work in React ?
+   - We create lists in React as we do in regular JavaScript. Lists display data in an ordered format
+   - The traversal of lists is done using the map() function
+
+      const names = ['Kohli', 'Saif', 'Arun', 'Aamir', 'Arif']; 
+      const listOfNames = () => { 
+            const listitems = names.map((name) => 
+                  <li key={name}> 
+                  {name} 
+                  </li> 
+         ); 
+         return ( 
+         <ul>{listItems}</ul>
+         );
+         }
+
+
+
+
 
 
 
